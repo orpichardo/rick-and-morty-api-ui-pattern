@@ -12,10 +12,14 @@ function App() {
   }, [])
 
   function apiCall() {
-    fetch(" https://rickandmortyapi.com/api/character")
-      .then((res) => res.json())
-      .then((data) => setCharacters(data.results))
+    fetch("https://rickandmortyapi.com/api/character?page=2")
+      // " https://rickandmortyapi.com/api/character")
+    
+    .then((res) => res.json())
+    .then((data) => setCharacters(data.results))
   }
+  
+
 
   function display() {
     setModalToggle(prev => !prev)
@@ -32,7 +36,7 @@ function App() {
       <div className="characters-list">
         {characters.map((character, index) => (
           <div className="character-container" onClick={() => handleClick(character)} key={index}>
-            <img src={character.image} />
+            <img className= "image" src={character.image} />
             <h3>{character.name}</h3>
           </div>
         ))}

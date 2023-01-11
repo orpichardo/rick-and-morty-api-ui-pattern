@@ -8,6 +8,8 @@
 
 Nav {
   font-size: 25px;
+  box-shadow: 0 0 20px 0 green;
+  background-color: green;
 }
 
 body {
@@ -50,8 +52,8 @@ body {
   /* display: flex; */
   /* flex-direction: column; */
   /* justify-content: center; */
-  background-image: url(../spacerick.jpg);
-  background-size: 300px;
+  background-image: url(../lost_in_space.png);
+  background-size: 1000px;
   background-repeat: no-repeat;
   background-position: center;
   /* border: 10px; */
@@ -69,4 +71,9 @@ button {
 .info {
   color: white;
   margin: 0px;
+}
+
+.image {
+    box-shadow: 0 0 30px 0 green;
+    cursor: wait;
 }
