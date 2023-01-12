@@ -7,10 +7,21 @@
   background-position: center; */
 
 Nav {
-  font-size: 25px;
-  box-shadow: 0 0 20px 0 green;
+  /* background-image: url("./pictures/lmqrkt.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+  font-size: 3em;
+  border-radius: 10%;
+  font-family: 'Get Schwifty';
+  color: #08BAE3;
+  z-index: 50;
+  -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+  box-shadow: 0 0 40px 0 green;
   background-color: green;
 }
+/* font-size: 25px; */
 
 body {
   text-align: center;
@@ -27,7 +38,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-image: none;
+  
 }
 
 
@@ -76,4 +87,9 @@ button {
 .image {
     box-shadow: 0 0 30px 0 green;
     cursor: wait;
+}
+
+@font-face {
+  font-family: 'Get Schwifty';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
 }
